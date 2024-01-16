@@ -1,0 +1,1 @@
+python vod_converter/main.py --from kitti --from-path /Users/giakhang/Downloads/training  --to voc --to-path /Users/giakhang/Downloads/training_voc
