@@ -27,6 +27,14 @@ to:
 - [Pascal VOC](http://host.robots.ox.ac.uk/pascal/VOC/voc2012/htmldoc/index.html)
 - [KITTI](http://www.cvlibs.net/datasets/kitti/eval_object.php)
 
+# Splitting the train set into train and validation sets
+
+After converting from the code above, there will be a `ImageSets/Main/trainval.txt` which contains all the training image names. Using the command below to split it into train and validation sets which are named `train.txt` and `val.txt`, located at the same folder
+
+```
+$ ./split_train_val.sh
+```
+
 ## That 'train.txt' file for KITTI
 
 When reading in KITTI, the script expects a `train.txt` file that isn't part of the original dataset. This is simply a file with the name of each datapoint you wish to capture. [Here's an example with everything in the training set](https://github.com/umautobots/vod-converter/files/1139276/train.txt). You can also create it like so:
@@ -49,3 +57,7 @@ $ head datasets/kitti/train.txt
 ## Note
 
 This module just works on jsonchema==3.2.0
+
+## References
+
+https://github.com/umautobots/vod-converter

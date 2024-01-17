@@ -84,3 +84,7 @@ bccd_test_cocoformat.json
 cut -f -4 -d , sample/bccd_test_cocoformat.json
 {"images": [{"file_name": "BloodImage_00007.jpg", "height": 480, "width": 640, "id": "BloodImage_00007"}
 ```
+
+## References
+
+https://github.com/yukkyo/voc2coco
