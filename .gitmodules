@@ -4,3 +4,9 @@
 [submodule "ultralytics"]
 	path = ultralytics
 	url = https://github.com/GiaKhangLuu/ultralytics.git
+[submodule "CenterNet"]
+	path = CenterNet
+	url = https://github.com/GiaKhangLuu/CenterNet.git
+[submodule "detr"]
+	path = detr
+	url = https://github.com/GiaKhangLuu/detr.git
