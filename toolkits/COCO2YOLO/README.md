@@ -7,6 +7,12 @@ COCO to YOLO converter
 $ ./coco2yolo.sh
 ```
 
+# After converting to COCO format, call this script to prepare for the .yaml file
+
+```
+$ ../../make_yolo_dataset.sh
+```
+
 # Usage
 
 `python COCO2YOLO.py -j coco.json -o path_to_dir`

@@ -99,9 +99,9 @@ class COCO2YOLO:
         print("saving done")
 
     def _save_txt(self, anno_dict):
-        print(f"---------saving to {output}--------")
+        print(f"--------- saving to {output} --------")
         for k, v in anno_dict.items():
-            file_name = os.path.splitext(v[0][0])[0] + ".txt"
+            file_name = os.path.splitext(v[0][0].split('/')[-1])[0] + ".txt"
             file_path = os.path.join(output, file_name)
             with open(file_path, 'w', encoding='utf-8') as f:
                 #print(k, v)
